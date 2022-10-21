@@ -102,9 +102,39 @@ async function addToPlaylist(id) {
     $("#refreshButton").on('click', function (e) {
         e.preventDefault();
         form.submit();
-        setTimeout(pageReload, 1000);
+        var pre = document.getElementById('requested')
+        fetch('https://api.spotify.com/v1/playlists/2vKdozL3KSdkA9TrKlo3nA/tracks?fields=items(track(name%2Cartists(name)))', {
+            method: 'GET',
+            headers: authToken
+        })
+        .then((response) => {
+        return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            data.items.forEach((item)=>{
+                var artistString = getArtist(item.track['artists']);
+                $("#requested").append(`<pre>${item.track.name} - ${artistString}</pre>`);
+            })
+        })
+    .catch(error => console.log(error));
+
+    function getArtist(artists) {
+        let artistString = '';
+        var counter = 1;
+        artists.forEach((artist)=>{
+            if (counter == 1) {
+                artistString = artistString + ' ' + artist.name;
+            } else {
+                artistString = artistString + ' / ' + artist.name;
+            } 
+            counter++;
+        });
+        return artistString;
+    }
+        // setTimeout(pageReload, 1000);
     });
     
-    function pageReload() {
-        window.location.reload();
-    };
+    // function pageReload() {
+    //     window.location.reload();
+    // };
