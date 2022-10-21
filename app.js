@@ -1,6 +1,6 @@
 var authToken = {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQDbBq5rK419dfwlcK_HCvoXY2KkkcJ9yZ0ANB-CHDIE7aXCP3vl2pv3ZxKEb-ZuPHf2LPX_m_QDR6nXFh5-pgKhiuwzKukG35eUlrS0E9YTnSJYoW3wnW17Jch7cVXAepJgqgf5wmWpVxUk2JsZlue3nx6LCwYJXN20B4B24QcKERMCEM4D7mNZk6PPGK12paQrG1oh4I1RPpFs-seXLFd4O3Oe1-O0AG4gw2OUi7-bZPC2vZQ'
+    'Authorization': 'Bearer BQAqqx2Rh92ZBobxUHx3CyXjXR6fkedsOlJMjEDQnKTgs-zJnFvvje8qBYNGdGLVvaZyLDpDlnZxa9d-T_zjF82wNDmgtGu-uSo09iDeZm3bQzKcbvkiy0xi-ngaR0BAdjvQWe6eCntDhwEUzYmErHx62CA3PVudnQMcafBkEjOjs8Gm4d-0InXNd6mAYnHFleXWTjvZ6wVPeBQ5vaDsCUv4ui8MKfADVMBlRmUh-uCvddSup6E'
 };
 
 async function addToPlaylist(id) {
