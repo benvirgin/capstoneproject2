@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #D22F25;
+}
+
+* {
+  font-family: "League Spartan", Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+div {
+  text-align: center;
+}
+
+#reminderSlideShowDiv {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/backgroundimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.badge {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+h2 {
+  line-height: 2.2;
+}
+
+h2, h4 {
+  color: white;
+  padding-top: 4px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+legend {
+  margin-bottom: 24px;
+  margin-left: 10px;
+  text-align: left !important;
+  color: #1b1b1b !important;
+  font-size: 24px;
+}
+
+form {
+  display: inline-block !important;
+  width: 100%;
+}
+
+.songRequest {
+  font-size: 21px;
+  text-align: left !important;
+  width: 100% !important;
+  color: rgb(71, 71, 71) !important;
+  border-radius: 4px;
+}
+
+#artist {
+  margin-bottom: 23px !important;
+}
+
+#songInfo {
+  display: block !important;
+}
+
+#songInfo.hideSI {
+  display: none !important;
+}
+
+.btn-danger {
+  background-color: var(--primary-color);
+}
+
+#submitRequest {
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  margin-top: 24px;
+  display: block !important;
+}
+#submitRequest:not([disabled]):hover {
+  background-color: #f54a43 !important;
+}
+
+#submitRequest.hideB {
+  display: none !important;
+}
+
+#submitRequestLoading {
+  background-color: rgba(220, 53, 69, 0.65) !important;
+  color: white !important;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  margin-top: 24px;
+  display: none !important;
+}
+
+#submitRequestLoading.showB {
+  display: block !important;
+}
+
+#thank-you-message.show {
+  display: block !important;
+}
+
+p {
+  color: black !important;
+}
+
+img {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=styles.css.map */

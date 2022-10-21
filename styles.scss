@@ -1,0 +1,98 @@
+@import 'global';
+
+h1 {
+    color: var(--primary-color);
+}
+
+div {
+    text-align: center;
+}
+
+div.result {
+    display: block;
+}
+
+#reminderSlideShowDiv {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/imgs/backgroundimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.badge {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h2 {
+    line-height: 2.2;
+}
+
+h2, h4 {
+    color: white;
+    padding-top: 4px;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+.rslides li {
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+  
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+form {
+    display: inline-block !important;
+    width: 100%;
+}
+
+.songRequest {
+    font-size: 21px;
+    text-align: left !important;
+    width: 100% !important;
+    color: rgba(71, 71, 71, 1) !important;
+    border-radius: 4px;
+}
+
+legend {
+    text-align: left !important;
+    color: #1b1b1b !important;
+    font-size: 24px !important;
+}
+
+#buttonAdd {
+    @include hover {
+        background-color: #f54a43 !important;
+        color: white !important;
+    }
+}
+
+@mixin hover {
+    &:not([disabled]):hover {
+        @content;
+    }
+}
+
+p {
+    color: black !important;
+}
+
+img {
+    margin-bottom: 15px;
+}
