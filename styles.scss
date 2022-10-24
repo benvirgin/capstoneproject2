@@ -13,7 +13,7 @@ div.result {
 }
 
 #reminderSlideShowDiv {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/imgs/backgroundimg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/backgroundimg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,23 +76,18 @@ legend {
     font-size: 24px !important;
 }
 
-#buttonAdd {
-    @include hover {
-        background-color: #f54a43 !important;
-        color: white !important;
-    }
-}
-
-@mixin hover {
-    &:not([disabled]):hover {
-        @content;
-    }
-}
-
 p {
     color: black !important;
 }
 
 img {
     margin-bottom: 15px;
+}
+
+@mixin dropdown {
+    list-style: none;    
+}
+
+#dropdown {
+    @include dropdown;
 }

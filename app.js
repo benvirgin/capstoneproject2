@@ -1,6 +1,6 @@
 var authToken = {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer BQAqqx2Rh92ZBobxUHx3CyXjXR6fkedsOlJMjEDQnKTgs-zJnFvvje8qBYNGdGLVvaZyLDpDlnZxa9d-T_zjF82wNDmgtGu-uSo09iDeZm3bQzKcbvkiy0xi-ngaR0BAdjvQWe6eCntDhwEUzYmErHx62CA3PVudnQMcafBkEjOjs8Gm4d-0InXNd6mAYnHFleXWTjvZ6wVPeBQ5vaDsCUv4ui8MKfADVMBlRmUh-uCvddSup6E'
+    'Authorization': 'Bearer BQBHGwBlqdd-3fQHmM6HAX2AirKOII2HGYPYo_tLWKrhFl0iAe-FvhZw4slAoS_ibiCr6J50Yn5tMlhi83IyJNsRXWOS51DLDXXTOytNszY5DwRtSklik9rEAxFanJ80E72DWnnc4dnFAHOtfy7MaTt41_MvdLSqTOLJDFUmN9_haua9yaDddDpSGdHwZVMWcGqNY2ujB3TieXPJZ1datuTtro1mb8QL2IjtaOxUUu2KU-JKQp0'
 };
 
 async function addToPlaylist(id) {
@@ -132,9 +132,4 @@ async function addToPlaylist(id) {
         });
         return artistString;
     }
-        // setTimeout(pageReload, 1000);
     });
-    
-    // function pageReload() {
-    //     window.location.reload();
-    // };
